@@ -1,12 +1,14 @@
 <div class="booyah-box col-xs-10 col-xs-offset-1">
   <h1><%= @place.name %></h1>
   <i><%= @place.address %></i>
+  <p><%= @place.longitude %></p>
+  <p><%= @place.latitude %></p>
   <br /><br />
   <p><%= @place.description %></p>
   <div class="pull-right">
 
         <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
-      
+
   </div>
   <div class="pull-right">
       <%= link_to 'Destroy', place_path(@place), method: :delete, class: 'btn btn-danger', data: {confirm: 'Are you sure you want to delete tihs page?'} %>
